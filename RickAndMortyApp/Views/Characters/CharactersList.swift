@@ -78,7 +78,7 @@ struct CharactersList: View {
                         selection: selection == genderSelection ? $genderSelection : $statusSelection ,
                         title: title){ _ in
                 Repository(modelData: modelData).fetchcharacters(
-                    fromRemote: searchOnLocalDb,
+                    fromLocal: searchOnLocalDb,
                        gender: genderSelection == "All genders" ? nil : genderSelection
                    ,status: statusSelection == "All status" ? nil : statusSelection
                    )
