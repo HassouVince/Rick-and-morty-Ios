@@ -23,7 +23,7 @@ final class Repository {
                        gender: String? = nil,
                        status: String? = nil,
                        initList: Bool = true){
-        if(fromRemote){
+        if(fromLocal){
             fetchCharactersFromLocal(gender: gender, status: status)
         }else{
             fetchCharactersFromRemote(url: url, gender: gender, status: status, initList: initList)
