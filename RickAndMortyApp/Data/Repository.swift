@@ -18,7 +18,7 @@ final class Repository {
           self.modelData = modelData
        }
     
-    func fetchcharacters(fromRemote: Bool = false,
+    func fetchcharacters(fromLocal: Bool = false,
                        url: String = "https://rickandmortyapi.com/api/character?page=1",
                        gender: String? = nil,
                        status: String? = nil,
